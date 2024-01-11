@@ -2,7 +2,8 @@ module sn.dev.parrainageapp {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
-    requires lombok;
+    requires static lombok;
+    requires TrayNotification;
 
 
     opens sn.dev.parrainageapp to javafx.fxml;

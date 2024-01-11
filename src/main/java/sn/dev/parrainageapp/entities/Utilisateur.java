@@ -1,12 +1,11 @@
 package sn.dev.parrainageapp.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 public class Utilisateur {
     private int id;
     private String nom, prenom, login, password;

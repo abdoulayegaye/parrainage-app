@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sn.dev.parrainageapp.controllers.LoginController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.dev.parrainageapp.controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="281.0" prefHeight="350.0" prefWidth="321.0">
+         <children>
+            <Text layoutX="95.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONNEXION" underline="true">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+            <TextField fx:id="loginTfd" layoutX="28.0" layoutY="121.0" prefHeight="25.0" prefWidth="261.0" promptText="Votre login ici" />
+            <Text layoutX="28.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <PasswordField fx:id="passwordTfd" layoutX="28.0" layoutY="204.0" prefHeight="25.0" prefWidth="261.0" promptText="Votre mot de passe ici" />
+            <Button layoutX="117.0" layoutY="272.0" mnemonicParsing="false" onAction="#login" text="Se Connecter" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="400.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-user.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
